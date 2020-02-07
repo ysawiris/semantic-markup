@@ -6,30 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yoyo's Portfolio</title>
     <style>
-        ol#menu li {
-          display:inline;
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            footer {
+                text-align: center;
+            }
+            ol#menu li {
+                list-style: none;
+            }
+            h1 {
+                text-align: center;
+            }
         }
-        body {
-        font-family: Helvetica;
-        font-size: 16px;
-        margin: 10px;
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {}
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {}
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            ol#menu li {
+                list-style: none;
+            }
+            body {
+                font-family: Helvetica;
+                font-size: 16px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 3em;
+                margin: 1rem;
+            }
+            section {
+                margin: 2em;
+            }
+            hgroup {
+                text-align: center;
+            }
+
+            .container {
+                min-width: 600px;
+                max-width: 900px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .container2 {
+                min-width: 600px;
+                max-width: 900px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
-        h1 {
-        font-size: 3em;
-        margin: 1rem;
-        }
-        section {
-            margin: 2em;
-        }
-        hgroup {
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {}
+    
+
     </style>
 </head>
 <body>
+    <div class="container">
     <hgroup>
         <h1>Youssef Gamal Sawiris</h1>   
     </hgroup>
@@ -37,13 +77,14 @@
     <hr>
     
     <ol id="menu">
-        <li>851 California Street, San Francisco 94108 |</li>
-        <li>sawirisyoussef@gmail.com |</li>
-        <li>(510) 331-7772 |</li>
+        <li>851 California Street, San Francisco 94108</li>
+        <li>sawirisyoussef@gmail.com</li>
+        <li>(510) 331-7772</li>
         <li>https://github.com/ysawiris</li>
     </ol>
+    </div>
    
-
+    <div class="container2">
     <section>
         <h2>EDUCATION</h2>
         <ul>
@@ -86,10 +127,11 @@
             </ul>
         </article>
     </section>
+    </div>
 
     <footer>
         <img src="/Users/ysawiris/dev/semantic-markup/static/image-yoyo-final.png" alt="yoyo logo" style="height: 50px; "> &copy; 2020
     </footer>
-    
+</div>
 </body>
 </html>
